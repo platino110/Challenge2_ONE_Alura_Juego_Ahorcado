@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!--Jairo Raul Urrego Saa / urregos.jairo@gmail.com / ONE-Grupo 3 / Challenge "Encriptador de texto" / Github: https://github.com/platino110/ * * * Colombia 16/08/2022 -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/estilo1.css" />
+  <title>Juego del ahorcado</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="titulo">
+            <p class="tituloimagen">JUEGO DEL AHORCADO</p>
+        </div>
+        <div class="imagen">
+            <img class="imagenfinal" src="./imagenes/juego1.png" title="logo"/> 
+        </div>
+    </header>
+    <section class="contenedor"> 
+        <div class="hombre">
+            <img id="hombredibujo" class="hombre ahorcado" title="imagen ahorcado"/>
+        </div>
+        <div class="correctas"></div>
+        <div class="incorrectas"></div>
+        <div class="boton">
+            <input type="button" id="botonnuevo" class="botonnuevo" value="nuevo juego" onclick = "nuevojuego()"></input>
+            <input type="button" id="botonagregar" class="botonagregar" value="agregar palabra" onclick = "nuevapalabra()"></input>
+        </div>
+    </section>
+    <footer>
+        <div class="firma"></div>
+        <h4 class="parrafofinal">Jairo Raul Urrego Saa - Challenge 2 - Proyecto Alura Latam y Oracle Next Education</h4>
+    </footer>
+    <script src="./js/reglas1.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+/*Jairo Raul Urrego Saa / urregos.jairo@gmail.com / ONE-Grupo 3 / Challenge "Encriptador de texto" / Github: https://github.com/platino110/ * * * Colombia 16/08/2022*/
+
+/*nuevas fuentes*/ 
+@font-face {
+    font-family: 'shader';
+    src: url('../fuentes/shader.ttf');
+}
+@font-face {
+    font-family: 'wood';
+    src: url('../fuentes/wood.ttf');
+}
+
+/*body*/
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url('../imagenes/fondo1.jpg');
+    background-repeat: no-repeat; /* la imagen de fondo no se repite */
+    background-attachment: fixed; /* la altura de la imagen no supere la del contenido */
+    background-size: cover; /* la imagen de fondo se reescala automaticamente con el cambio del ancho de ventana del navegador */
+    font-size: 16px;
+    max-width: 95em;
+} 
+
+/*contenedores superior*/
+.cabecera{
+    display: grid;
+    padding: 0.3em;
+    grid-template-columns: 75% 25%;
+}
+
+/*contenedores inferior*/
+.contenedor{
+    text-align: center;
+}  
+
+/*logo*/
+.imagenfinal{
+    width: 12vw;
+    height: 20vh;
+}
+
+/*titulo*/
+.tituloimagen{
+    font-family: 'shader';
+    font-size: 2.4em;
+    color:rgb(35, 50, 35);
+    text-shadow: 3px 3px 5px rgb(48, 68, 48), 6px 6px 5px rgb(64, 88, 64), 9px 9px 5px rgb(79, 109, 79);
+} 
+
+/*imagen del ahorcado*/
+.ahorcado{
+    width: 25vw;
+    height: 35vh;
+    border: 2px solid rgb(30, 43, 30);
+    border-radius: 10px;
+    box-shadow: rgb(35, 50, 35) 0px 0px 0px 3px, rgb(48, 68, 48) 0px 0px 0px 6px, rgb(64, 88, 64) 0px 0px 0px 9px, rgb(79, 109, 79) 0px 0px 0px 12px;
+}  
+
+/*letras correctas*/
+.correcta{
+    display: inline-block;
+    width: 2.0em;
+    height: 2.5em;
+    font-size: 1.5em;
+    color: rgb(197, 247, 197);
+    vertical-align: middle;
+    border-bottom: solid 0.2em rgb(34, 43, 34);
+    line-height: 3em;
+    margin-bottom: 1em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    font-weight: bolder;
+}  
+
+/*letras incorrectas*/
+.incorrecta{
+    display: inline-block;
+    margin-bottom: 1.5em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    color: rgb(197, 247, 197);
+}  
+
+/*firma*/
+.parrafofinal{
+    display: flex;
+    justify-content: center;
+}
+
+/*botones*/
+.botonnuevo, .botonagregar{
+    width: 12em;
+    padding: 0.5em;
+    background-color:rgb(48, 68, 48);
+    color:rgb(255,255,255);
+    letter-spacing: 0.2em;
+    border-radius: 2em 0em 2em 0em; 
+    border: 1px solid;
+    text-align: center;
+    cursor: pointer;
+    font-family:'wood';
+    font-size: 1.3em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+.botonnuevo:hover, .botonagregar:hover{
+    box-shadow: 0 0 10px 10px rgb(95, 131, 95);
+    color: blanchedalmond;
+}
+
+
+
+
